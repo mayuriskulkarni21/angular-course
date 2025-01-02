@@ -11,20 +11,7 @@ import { Course } from './model/course';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  data = {
-    title: 'angular-course',
-  };
-  angularCourse = COURSES[0];
-  RxJsCourse = COURSES[1];
-  NgRxCourse = COURSES[2];
-
-  onClick() {
-    alert('Hello!!');
-  }
-
-  onKeyUp(newTitle: string) {
-    this.data.title = newTitle;
-  }
+  courses = COURSES;
 
   onCardView(course: Course) {
     console.log('into app component', course);

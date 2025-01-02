@@ -8,6 +8,7 @@ import { Course } from '../model/course';
   styleUrl: './course-card.component.css',
 })
 export class CourseCardComponent {
+  // Passing courses values from app component to the course-card component
   @Input()
   course: any;
 

@@ -1,14 +1,5 @@
 <div>
-  <app-course-card
-    (eventEmmitter)="onCardView($event)"
-    [course]="angularCourse"
-  ></app-course-card>
-  <app-course-card
-    (eventEmmitter)="onCardView($event)"
-    [course]="RxJsCourse"
-  ></app-course-card>
-  <app-course-card
-    (eventEmmitter)="onCardView($event)"
-    [course]="NgRxCourse"
-  ></app-course-card>
+  @for(course of courses; track course.id){
+  <app-course-card (eventEmmitter)="onCardView($event)" [course]="course" />
+  }
 </div>
