@@ -1,0 +1,14 @@
+<div class="courses">
+  <div class="course-card">
+    <h2 class="course-title">{{ course.description }}</h2>
+    <img width="300" alt="Angular Logo" [src]="course.iconUrl" />
+
+    <div class="course-description">
+      {{ course.longDescription }}
+    </div>
+
+    <button (click)="onViewDetails()" class="view-details-btn">
+      View Details
+    </button>
+  </div>
+</div>

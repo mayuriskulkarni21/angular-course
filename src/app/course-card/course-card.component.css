@@ -1,0 +1,28 @@
+.top-menu {
+  background: #1976d2;
+  padding: 2px 15px;
+}
+
+.logo {
+  max-height: 55px;
+}
+
+.courses {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.course-card {
+  border: 1px solid lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.view-details-btn {
+  height: 40px;
+  background-color: #d2ddf1;
+  border-block-color: blue;
+  margin: 10px;
+  width: 105px;
+  cursor: pointer;
+}
