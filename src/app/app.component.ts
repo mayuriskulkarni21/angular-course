@@ -11,7 +11,7 @@ import { Course } from './model/course';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  courses = COURSES;
+  courses = [...COURSES];
 
   onCardView(course: Course) {
     console.log('into app component', course);

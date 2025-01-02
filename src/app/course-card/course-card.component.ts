@@ -12,11 +12,15 @@ export class CourseCardComponent {
   @Input()
   course: any;
 
+  @Input({ required: true })
+  index: number;
+
   @Output()
   eventEmmitter = new EventEmitter<Course>();
 
   constructor() {
     this.course = {};
+    this.index = 0;
   }
 
   ngOnInit() {}

@@ -4,3 +4,19 @@ input.demo {
   height: 30px;
   font-size: 25px;
 }
+
+.is_first {
+  border-top: 2px dotted blueviolet;
+}
+
+.is_last {
+  border-bottom: 2px dotted blueviolet;
+}
+
+.is_odd div {
+  background-color: lightblue;
+}
+
+.is_even div {
+  background-color: lightgrey;
+}

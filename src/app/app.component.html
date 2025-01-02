@@ -1,5 +1,16 @@
 <div>
-  @for(course of courses; track course.id){
-  <app-course-card (eventEmmitter)="onCardView($event)" [course]="course" />
+  @for(course of courses; track course?.id){
+  <!-- <h3>{{ $count }}</h3> -->
+  <app-course-card
+    [index]="$index"
+    (eventEmmitter)="onCardView($event)"
+    [course]="course"
+    [class.is_first]="$first"
+    [class.is_last]="$last"
+    [class.is_odd]="$odd"
+    [class.is_even]="$even"
+  />
+  } @empty {
+  <h3>Empty!!</h3>
   }
 </div>
